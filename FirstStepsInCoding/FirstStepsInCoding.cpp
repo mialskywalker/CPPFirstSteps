@@ -3,9 +3,16 @@ using namespace std;
 
 int main()
 {
-	string name;
-	cin >> name;
+	double sqmeters;
+	cin >> sqmeters;
 
-	cout << "Hello, " << name << "!" << endl;
+	double forone = 7.61;
+	double result = sqmeters * forone;
+	double discount = result * 0.18;
+	result -= discount;
+
+	cout << "The final price is: " << result << " lv." << endl;
+	cout << "The discount is: " << discount << " lv." << endl;
+
 	return 0;
 }
